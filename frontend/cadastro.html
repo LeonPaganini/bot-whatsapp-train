@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="assets/app.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="medidas.html">Medidas</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+    </header>
+    <main>
+      <div class="card">
+        <h1>Cadastro</h1>
+        <form id="cadastro-form">
+          <label>Nome</label>
+          <input type="text" name="nome" required />
+
+          <label>WhatsApp (E.164)</label>
+          <input type="text" name="whatsapp_e164" required />
+
+          <label>Sexo</label>
+          <select name="sexo">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+          </select>
+
+          <label>Altura (cm)</label>
+          <input type="number" name="altura_cm" required />
+
+          <label>Personal ID</label>
+          <input type="text" name="personal_id" placeholder="default" />
+
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </main>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

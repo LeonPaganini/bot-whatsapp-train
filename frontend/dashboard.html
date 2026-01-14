@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/app.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="medidas.html">Medidas</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+    </header>
+    <main id="dashboard">
+      <div class="card">
+        <h1>Dashboard</h1>
+        <label>Exercício</label>
+        <select id="exercicio-select"></select>
+      </div>
+      <div class="chart-grid">
+        <div class="card"><canvas id="peso-chart"></canvas></div>
+        <div class="card"><canvas id="bf-chart"></canvas></div>
+        <div class="card"><canvas id="ffm-chart"></canvas></div>
+        <div class="card"><canvas id="volume-semanal"></canvas></div>
+        <div class="card"><canvas id="consistencia"></canvas></div>
+        <div class="card"><canvas id="carga-exercicio"></canvas></div>
+        <div class="card"><canvas id="strength-index"></canvas></div>
+      </div>
+    </main>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

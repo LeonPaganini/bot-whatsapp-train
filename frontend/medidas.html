@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Medidas</title>
+    <link rel="stylesheet" href="assets/app.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="medidas.html">Medidas</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+    </header>
+    <main>
+      <div class="card">
+        <h1>Medidas</h1>
+        <form id="medidas-form">
+          <label>WhatsApp (E.164)</label>
+          <input type="text" name="whatsapp_e164" required />
+
+          <label>Data</label>
+          <input type="date" name="data" required />
+
+          <label>Peso (kg)</label>
+          <input type="number" name="peso_kg" step="0.1" required />
+
+          <label>Cintura (cm)</label>
+          <input type="number" name="cintura_cm" step="0.1" required />
+
+          <label>Pescoço (cm)</label>
+          <input type="number" name="pescoco_cm" step="0.1" required />
+
+          <label>Quadril (cm) - obrigatório para mulheres</label>
+          <input type="number" name="quadril_cm" step="0.1" />
+
+          <button type="submit">Salvar</button>
+        </form>
+      </div>
+    </main>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
